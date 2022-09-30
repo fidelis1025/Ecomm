@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"/>
+   
+    <link rel="stylesheet" href="./css/main.css"/>
+    <script src="./js/app.js" defer></script>
+    <script src="./js/script.js" defer></script>
+
+    <title>E-Commerce Product Page</title>
+  </head>
+
+  <body>
+    
+    </div>
+    <header>
+      <div class="flex justify-between my-8 mx-72 font-mono md:">
+        <nav class="flex space-x-12 text-lg text-grayishBlue py-4 ">
+          <img src="./images/logo.svg" class="h-6"/>
+          <a href="" class="text-lg text-grayishBlue hover:text-veryDarkBlue hover:border-b-4 hover:border-orange">Collections</a>
+          <a href="" class="text-lg text-grayishBlue hover:text-veryDarkBlue hover:border-b-4 hover:border-orange">Men</a>
+          <a href="" class="text-lg text-grayishBlue hover:text-veryDarkBlue hover:border-b-4 hover:border-orange">Women</a>
+          <a href="" class="text-lg text-grayishBlue hover:text-veryDarkBlue hover:border-b-4 hover:border-orange">About</a>
+          <a href="" class="text-lg text-grayishBlue hover:text-veryDarkBlue hover:border-b-4 hover:border-orange">Contact</a>
+        </nav>
+        <div class="flex space-x-14">
+          <img src="./images/icon-cart.svg" class="h-6 w-6 mt-4 cursor-pointer" id="checkout">
+          <img src="./images/image-avatar.png" class="h-14 w-14 cursor-pointer" id="avatar">
+        </div>
+      </div>
+      <hr class="mx-72" />
+    </header>
+
+    <main>
+
+      <div id="cart" class="bg-white w-96 h-60 drop-shadow-2xl rounded-lg">
+        <p class="font-bg font-mono text-veryDarkBlue py-6 pl-8">Cart</p>
+        <hr>
+        <p id="fruit"  class="font-bg font-mono text-sm text-darkBlue text-center py-14">Your Cart Is Empty</p>
+        <div id="turn">
+          <div class="flex space-x-3 justify-center items-center py-4">
+            <img src="./images/image-product-1-thumbnail.jpg" alt="Thumbnail" class="h-14 w-14 rounded-lg">
+            <div class= "font-sm font-mono text-lg text-grayishBlue">
+               <p>Fall Limited Edition Sneakers</p>
+               <p>$<span id="price"></span>  x <span id="order"></span> $<strong class="text-veryDarkBlue" id="total">375</strong></p>
+            </div>
+            <img src="./images/icon-delete.svg" alt="Thumbnail" class="h-4 w-4 cursor-pointer" id="dlt">
+          </div>
+          <button class="ml-8 py-4 px-32 bg-orange text-white text-lg rounded-lg font-mono font-sm">Checkout</button>
+        </div>
+    </div>
+      
+
+
+
+
+      <div class="flex space-x-20 mx-96 mt-24">
+       
+        <div class="flex flex-col space-y-8">
+          <img src="/images/image-product-1.jpg" alt="Product-1" id="img" class=""/>
+          <div class="flex space-x-8">
+            <a href="#"><img src="./images/image-product-1-thumbnail.jpg" alt="" class="h-24 w-24 rounded-lg hover:opacity-50 hover:border-2 hover:border-orange" id="nail-1"></a>  
+              <a href="#"><img src="./images/image-product-2-thumbnail.jpg" alt="" class="h-24 w-24 rounded-lg hover:opacity-50 hover:border-2 hover:border-orange" id="nail-2"></a>    
+              <a href="#"><img src="./images/image-product-3-thumbnail.jpg" alt="" class="h-24 w-24 rounded-lg hover:opacity-50 hover:border-2 hover:border-orange" id="nail-3"></a>
+             <a href="#"><img src="./images/image-product-4-thumbnail.jpg" alt="" class="h-24 w-24 rounded-lg hover:opacity-50 hover:border-2 hover:border-orange" id="nail-4"></a>        
+          </div>
+        </div>
+
+        <div class="pt-16">
+          <p class="pb-4 font-bg font-mono text-orange text-sm uppercase tracking-widest">
+            Sneaker Company
+          </p>
+          <h1 class="text-5xl text-veryDarkBlue font-bg font-mono">
+            Fall Limited Edition Sneakers
+          </h1>
+          <p class="pt-10 font-sm font-mono text-lg text-grayishBlue">
+            These low-profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer sole, they’ll withstand everything
+            the weather can offer.
+          </p>
+          <p class=" pt-6 font-bg font-mono text-3xl text-veryDarkBlue">$ <span id="ground">1250.00</span><span class="ml-5 text-xl text-orange bg-paleOrange py-1 px-2 rounded-lg">50%</span></p>
+          <p class="font-sm font-mono text-lg text-grayishBlue line-through mt-2">$2500.00</p>
+
+          <div class="flex space-x-8 mt-10">
+          <div class="flex space-x-0">
+            <img src="./images/icon-minus.svg" alt="" class="hover:cursor-pointer hover:opacity-50 bg-lightGrayishBlue py-6 px-6 rounded-l-lg" id="negative">
+            <input name="input" class="inline-block bg-lightGrayishBlue outline-none h-14 w-16 text-center text-lg font-bg font-mono">
+            <img src="./images/icon-plus.svg" alt="" class="hover:cursor-pointer hover:opacity-50 bg-lightGrayishBlue py-4 px-6 rounded-r-lg" id="positive">
+          </div>
+          <button id="btn" class="bg-orange h-12 px-16 py-3 text-white text-sm rounded-lg font-mono font-sm drop-shadow-xl hover:opacity-50"><img src="./images/icon-cart.svg" alt="cart" class="h-5 w-5 fill-white align-middle pr-2"> Add to cart</button>
+        </div>        
+      </div>
+    </div>
+  </main>
+  
+  
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/fidelis1025/" class="text-red underline text-xl font-lg">Fidelis</a>.
+    </div>
+  </body>
+</html>

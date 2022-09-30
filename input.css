@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+  img, video, svg {
+    max-width: initial;
+    height: initial;
+    display: inline;
+    vertical-align: middle;
+  }
+} 
+
+body{
+  background: hsl(0, 0%, 100%);
+  box-sizing: border-box;
+}
+
+#img{
+  height: 30rem;
+  width: 30rem;
+  border-radius: 12px;
+}
+
+#avatar:focus,
+#avatar:hover{
+  border: 2px solid rgb(255, 125, 26); 
+  border-radius: 9999px;
+}
+
+#cart{
+  position: absolute;
+  top: 6rem;
+  left: 75rem;
+  display: none;
+}
+
+#turn{
+  display: none;
+}
+
+#fruit{
+  display: block;
+}
+
+#overlay{
+  display: block;
+}
